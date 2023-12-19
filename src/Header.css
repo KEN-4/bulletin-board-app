@@ -1,0 +1,21 @@
+.app-header {
+  background-color: #66D48B;
+  color: white;
+  padding: 10px 20px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.app-header h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.new-thread-button {
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+}

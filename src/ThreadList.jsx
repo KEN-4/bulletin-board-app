@@ -4,6 +4,7 @@ import axios from 'axios';
 const ThreadList = () => {
   const [threads, setThreads] = useState([]);
 
+  // axiosを使用してAPIからスレッドの情報を取得
   useEffect(() => {
     axios.get('https://railway.bulletinboard.techtrain.dev/threads')
       .then(response => {
@@ -20,6 +21,7 @@ const ThreadList = () => {
       <div className="thread-list-title">新着スレッド</div>
       <ul>
         {threads.map(thread => (
+          // スレッドごとにリストアイテムを生成
           <li key={thread.id} className="thread-list-item">
             {thread.title}
           </li>

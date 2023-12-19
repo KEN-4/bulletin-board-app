@@ -1,0 +1,31 @@
+.new-thread-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+
+.new-thread-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.new-thread-form input[type="text"],
+.new-thread-form button[type="submit"] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px auto;
+}
+
+.new-thread-form button[type="submit"] {
+  background-color: #66D48B;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.new-thread-form p {
+  text-align: center;
+}

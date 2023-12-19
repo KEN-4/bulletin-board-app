@@ -1,13 +1,18 @@
 import ThreadList from "./ThreadList";
 import './ThreadList.css';
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import NewThread from "./NewThread";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-      <ThreadList />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path={'/'} element={<Home />} />
+        <Route path={'/thread/new'} element={<NewThread />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
