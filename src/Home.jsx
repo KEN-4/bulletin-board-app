@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import ThreadList from "./ThreadList";
 import './ThreadList.css';
 import Header from "./Header";
