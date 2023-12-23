@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link, useNavigate } from 'react-router-dom';
 
 const ThreadList = () => {
   const [threads, setThreads] = useState([]);
@@ -21,9 +22,9 @@ const ThreadList = () => {
       <div className="thread-list-title">新着スレッド</div>
       <ul>
         {threads.map(thread => (
-          // スレッドごとにリストアイテムを生成
+          // スレッドごとにリストアイテムを生成し，押したらそのスレッド内に移動
           <li key={thread.id} className="thread-list-item">
-            {thread.title}
+            <Link to={`/thread/${thread.id}`}>{thread.title}</Link>
           </li>
         ))}
       </ul>

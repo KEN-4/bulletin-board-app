@@ -8,7 +8,7 @@ const NewThread = () => {
   const [title, setTitle] = useState(''); 
   const navigate = useNavigate();
 
-  //ボタンを押したら動作する関数
+  // ボタンを押したら動作する関数
   const handleSubmit = (e) => {
     e.preventDefault();
 

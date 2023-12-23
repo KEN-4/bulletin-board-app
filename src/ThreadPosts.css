@@ -1,0 +1,58 @@
+.thread-posts-container {
+  background-color: #FFFFFF;
+  border: 1px solid #565656;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.thread-posts-title {
+  color: #565656;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* 投稿一覧 */
+.posts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 投稿アイテム */
+.posts-list-item {
+  border: 1px solid #565656;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* 新規投稿フォーム */
+.new-post-form {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* 新規投稿の入力フィールド */
+.new-post-input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #565656;
+}
+
+/* 投稿ボタン */
+.new-post-submit {
+  padding: 10px 20px;
+  background-color: #66D48B;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+/* 投稿ボタンのホバー効果 */
+.new-post-submit:hover {
+  background-color: #45a049; /* ホバー時の背景色 */
+}
